@@ -37,7 +37,7 @@ Deno.serve(async (req) => {
     }
     const d = parsed.data;
 
-    const recipient = "business@gulf-associates.org";
+    const recipient = "business@dunestrategy.com";
 
     const adminHtml = `
       <h2>New contact inquiry</h2>
@@ -52,9 +52,9 @@ Deno.serve(async (req) => {
 
     const confirmHtml = `
       <p>Dear ${escapeHtml(d.name)},</p>
-      <p>Thank you for contacting Gulf Associates. We have received your inquiry and a member of our team will respond within two business days.</p>
+      <p>Thank you for contacting Dune Strategy. We have received your inquiry and a member of our team will respond within two business days.</p>
       <p>All inquiries are treated with strict confidentiality.</p>
-      <p>Best regards,<br/>Gulf Associates</p>
+      <p>Best regards,<br/>Dune Strategy</p>
     `;
 
     const send = async (payload: Record<string, unknown>) => {
@@ -74,7 +74,7 @@ Deno.serve(async (req) => {
 
     // Admin notification only — sending to arbitrary recipients requires a verified domain
     await send({
-      from: "Gulf Associates <onboarding@resend.dev>",
+      from: "Dune Strategy <onboarding@resend.dev>",
       to: [recipient],
       reply_to: d.email,
       subject: `New inquiry from ${d.name}`,

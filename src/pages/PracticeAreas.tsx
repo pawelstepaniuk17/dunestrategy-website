@@ -184,19 +184,24 @@ export default function PracticeAreas() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
-        <GeometricAccent variant="lines" className="top-20 right-20 opacity-[0.18]" size="lg" />
-        <GeometricAccent variant="dots" className="bottom-0 -left-10 opacity-[0.12]" size="md" />
-        
-        <div className="container mx-auto px-6 lg:px-8 relative">
+      <section className="relative overflow-hidden">
+        <img
+          src="/images/practice-banner.png"
+          alt="Two senior advisors working through a decision at a glass wall"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/45" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
+
+        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="h-px w-10 bg-gold" aria-hidden="true" />
+              <p className="eyebrow text-gold">What we do</p>
+            </div>
+            <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-8xl lg:text-[6rem] lg:leading-[1.0] tracking-tight mb-8 text-balance">
               Practice areas
             </h1>
-            <div className="flex items-center gap-3 mb-10">
-              <span className="h-px w-10 bg-gold" aria-hidden="true" />
-              <p className="text-xs tracking-[0.18em] text-muted-foreground">What we do</p>
-            </div>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               The work is built around the commercial situations our clients actually face in the region:
               entering a Gulf market, choosing the right partner, sizing an acquisition, redesigning an

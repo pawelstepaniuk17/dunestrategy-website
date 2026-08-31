@@ -13,15 +13,15 @@ export default function TermsOfService() {
               Effective date: January 1, 2024
             </p>
             <p className="text-muted-foreground leading-relaxed mb-12">
-              These terms of service ("Terms") govern your use of the Gulf Associates 
-              website located at gulf-associates.org (the "Website"). By accessing or 
+              These terms of service ("Terms") govern your use of the Dune Strategy 
+              website located at dunestrategy.com (the "Website"). By accessing or 
               using the Website, you agree to be bound by these Terms. If you do not agree 
               with any part of these Terms, you should not use the Website.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-4">1. About Gulf Associates</h2>
+            <h2 className="text-2xl font-semibold mb-4">1. About Dune Strategy</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Gulf Associates is a Dubai-based advisory firm operating in the United Arab 
+              Dune Strategy is a Dubai-based advisory firm operating in the United Arab 
               Emirates. The Website provides information about our firm, our services, and our 
               professional perspectives. The Website also provides a means 
               for prospective clients and other interested parties to contact us.
@@ -44,7 +44,7 @@ export default function TermsOfService() {
               </li>
               <li className="text-muted-foreground flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-foreground rounded-full mt-2 shrink-0" />
-                Infringes on the intellectual property rights of Gulf Associates or any third party
+                Infringes on the intellectual property rights of Dune Strategy or any third party
               </li>
               <li className="text-muted-foreground flex items-start gap-3">
                 <span className="w-1.5 h-1.5 bg-foreground rounded-full mt-2 shrink-0" />
@@ -63,7 +63,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-semibold mb-4">3. Intellectual property</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               All content on the Website, including text, graphics, logos, images, and 
-              software, is the property of Gulf Associates or its licensors and is protected 
+              software, is the property of Dune Strategy or its licensors and is protected 
               by applicable intellectual property laws of the United Arab Emirates and 
               international treaties.
             </p>
@@ -92,7 +92,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-semibold mb-4">5. No client relationship</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Use of the Website or submission of an inquiry through the contact form does 
-              not establish a client-advisor relationship between you and Gulf Associates. A 
+              not establish a client-advisor relationship between you and Dune Strategy. A 
               professional relationship is formed only upon execution of a written engagement 
               agreement signed by an authorized representative of the Firm. Until such time, 
               any information you share with us through the Website is subject to our privacy 
@@ -119,7 +119,7 @@ export default function TermsOfService() {
               and non-infringement.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Gulf Associates does not warrant that the Website will be uninterrupted, 
+              Dune Strategy does not warrant that the Website will be uninterrupted, 
               error-free, or free of harmful components. We do not warrant the accuracy, 
               completeness, or timeliness of the content on the Website. We reserve the 
               right to modify, suspend, or discontinue any aspect of the Website at any 
@@ -128,7 +128,7 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold mb-4">8. Limitation of liability</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              To the fullest extent permitted by applicable law, Gulf Associates and its 
+              To the fullest extent permitted by applicable law, Dune Strategy and its 
               officers, directors, employees, agents, and affiliates shall not be liable 
               for any indirect, incidental, special, consequential, or punitive damages 
               arising out of or related to your use of or inability to use the Website, 
@@ -138,7 +138,7 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold mb-4">9. Indemnification</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              You agree to indemnify, defend, and hold harmless Gulf Associates and its 
+              You agree to indemnify, defend, and hold harmless Dune Strategy and its 
               officers, directors, employees, and agents from and against any claims, 
               liabilities, damages, losses, costs, and expenses (including reasonable 
               legal fees) arising from your use of the Website or your violation of these 
@@ -159,7 +159,7 @@ export default function TermsOfService() {
               These Terms are governed by and construed in accordance with the laws of the 
               United Arab Emirates. Any dispute arising out of or in connection with these 
               Terms shall be subject to the exclusive jurisdiction of the courts of Dubai, 
-              United Arab Emirates. Nothing in these Terms shall prevent Gulf Associates 
+              United Arab Emirates. Nothing in these Terms shall prevent Dune Strategy 
               from seeking injunctive or other equitable relief in any court of competent 
               jurisdiction.
             </p>
@@ -184,7 +184,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-semibold mb-4">14. Entire agreement</h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               These Terms, together with our privacy policy, constitute the entire agreement 
-              between you and Gulf Associates regarding your use of the Website. These Terms 
+              between you and Dune Strategy regarding your use of the Website. These Terms 
               supersede any prior agreements or understandings, whether written or oral, 
               relating to the subject matter herein.
             </p>
@@ -194,12 +194,12 @@ export default function TermsOfService() {
               For questions regarding these Terms, please contact us at:
             </p>
             <div className="text-muted-foreground leading-relaxed mt-4">
-              <p>Gulf Associates</p>
+              <p>Dune Strategy</p>
               <p>Techno Hub 2, Dubai Silicon Oasis</p>
               <p>Dubai, United Arab Emirates</p>
               <p className="mt-2">
-                <a href="mailto:business@gulf-associates.org" className="hover:text-foreground transition-colors">
-                  business@gulf-associates.org
+                <a href="mailto:business@dunestrategy.com" className="hover:text-foreground transition-colors">
+                  business@dunestrategy.com
                 </a>
               </p>
               <p>

@@ -17,20 +17,20 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-16 lg:h-20">
+        <nav className="flex items-center justify-between h-16 lg:h-[72px]">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Gulf Associates" className="h-10 lg:h-12 w-auto object-contain" />
+            <img src={logo} alt="Dune Strategy" className="h-9 lg:h-11 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-9">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className={`relative text-sm transition-colors hover:text-gold ${
+                className={`relative text-[13px] tracking-wide transition-colors hover:text-gold ${
                   location.pathname === item.href
                     ? "text-foreground after:content-[''] after:absolute after:left-0 after:right-0 after:-bottom-1.5 after:h-px after:bg-gold"
                     : "text-muted-foreground"
@@ -56,26 +56,29 @@ export function Header() {
           </button>
         </nav>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation — solid, opaque full-height drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border">
-            <div className="flex flex-col gap-4">
+          <div className="lg:hidden fixed inset-x-0 top-16 h-[calc(100dvh-64px)] bg-background border-t border-border overflow-y-auto">
+            <div className="container mx-auto px-6 flex flex-col py-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
-                  className={`text-sm py-2 transition-colors ${
+                  className={`flex items-center justify-between text-base py-4 border-b border-border/70 transition-colors ${
                     location.pathname === item.href
-                      ? "text-foreground"
-                      : "text-muted-foreground"
+                      ? "text-gold"
+                      : "text-foreground hover:text-gold"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
+                  <span className="eyebrow text-muted-foreground">
+                    {String(navItems.indexOf(item) + 1).padStart(2, "0")}
+                  </span>
                 </Link>
               ))}
-              <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button variant="outline" size="sm" className="w-full mt-2">
+              <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="mt-8">
+                <Button variant="outline" size="lg" className="w-full">
                   Contact
                 </Button>
               </Link>

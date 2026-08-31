@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
               Effective date: January 1, 2024
             </p>
             <p className="text-muted-foreground leading-relaxed mb-12">
-              Gulf Associates ("the Firm," "we," "us," or "our") is committed to protecting 
+              Dune Strategy ("the Firm," "we," "us," or "our") is committed to protecting 
               the privacy of individuals who visit our website and those who communicate with 
               us in connection with our professional services. This privacy policy describes 
               how we collect, use, store, and disclose personal information.
@@ -228,12 +228,12 @@ export default function PrivacyPolicy() {
               please contact us at:
             </p>
             <div className="text-muted-foreground leading-relaxed mt-4">
-              <p>Gulf Associates</p>
+              <p>Dune Strategy</p>
               <p>Techno Hub 2, Dubai Silicon Oasis</p>
               <p>Dubai, United Arab Emirates</p>
               <p className="mt-2">
-                <a href="mailto:business@gulf-associates.org" className="hover:text-foreground transition-colors">
-                  business@gulf-associates.org
+                <a href="mailto:business@dunestrategy.com" className="hover:text-foreground transition-colors">
+                  business@dunestrategy.com
                 </a>
               </p>
               <p>

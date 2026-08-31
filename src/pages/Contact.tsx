@@ -69,13 +69,13 @@ export default function Contact() {
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="h-px w-10 bg-gold" aria-hidden="true" />
+                <p className="eyebrow text-gold">Get in touch</p>
+              </div>
+              <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-8xl lg:text-[6rem] lg:leading-[1.0] tracking-tight mb-8 text-balance">
                 Contact
               </h1>
-              <div className="flex items-center gap-3 mb-10">
-                <span className="h-px w-10 bg-gold" aria-hidden="true" />
-                <p className="text-xs tracking-[0.18em] text-muted-foreground">Get in touch</p>
-              </div>
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
                 The firm takes inquiries from owners, chief executives, boards, and investors weighing a market
                 entry, a regional partnership, a transaction, or an operating decision in the Gulf. Initial
@@ -89,8 +89,8 @@ export default function Contact() {
             <div className="flex flex-col justify-center space-y-6">
               <div className="border-l-2 border-gold/70 pl-6">
                 <h3 className="font-medium mb-1">Email</h3>
-                <a href="mailto:business@gulf-associates.org" className="text-muted-foreground hover:text-foreground transition-colors">
-                  business@gulf-associates.org
+                <a href="mailto:business@dunestrategy.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                  business@dunestrategy.com
                 </a>
               </div>
               <div className="border-l-2 border-gold/70 pl-6">

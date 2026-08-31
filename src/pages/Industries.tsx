@@ -148,19 +148,24 @@ export default function Industries() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
-        <GeometricAccent variant="dots" className="top-10 right-10 opacity-[0.18]" size="lg" />
-        <GeometricAccent variant="diagonal" className="-bottom-20 -left-20 opacity-[0.14]" size="lg" />
+      <section className="relative overflow-hidden">
+        <img
+          src="/images/industries-banner.png"
+          alt="A Gulf commercial district and working port at dusk seen from an office"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/45" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
 
-        <div className="container mx-auto px-6 lg:px-8 relative">
+        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="h-px w-10 bg-gold" aria-hidden="true" />
+              <p className="eyebrow text-gold">Sectors we work in</p>
+            </div>
+            <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-8xl lg:text-[6rem] lg:leading-[1.0] tracking-tight mb-8 text-balance">
               Sector knowledge
             </h1>
-            <div className="flex items-center gap-3 mb-10">
-              <span className="h-px w-10 bg-gold" aria-hidden="true" />
-              <p className="text-xs tracking-[0.18em] text-muted-foreground">Sectors we work in</p>
-            </div>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               Sector knowledge in the Gulf is mostly about who the active counterparties are, how regulators are 
               moving, where capital is flowing, and which commercial structures are now standard. We carry that 
