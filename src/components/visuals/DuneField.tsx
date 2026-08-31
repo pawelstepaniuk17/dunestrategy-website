@@ -80,7 +80,7 @@ const DuneField = () => {
           baseY: 0.42 + t * 0.62,
           amp: 10 + t * 46,
           wavelength: 520 - t * 300,
-          speed: 6 + t * 20,
+          speed: 2 + t * 6,
           phase: i * 1.7,
           color: gold,
           fillAlpha: 0.05 + t * 0.14,
