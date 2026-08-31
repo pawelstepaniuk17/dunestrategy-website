@@ -2,7 +2,16 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { GeometricAccent } from "@/components/layout/GeometricAccent";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import DuneField from "@/components/visuals/DuneField";
+import {
+  ArrowRight,
+  Compass,
+  Sparkles,
+  Layers,
+  Globe2,
+  Quote,
+  PhoneCall,
+} from "lucide-react";
 
 const practiceAreas = [
   {
@@ -104,30 +113,23 @@ export default function Index() {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
-        {/* Full-bleed editorial cover */}
-        <img
-          src="/images/hero-boardroom.png"
-          alt="Senior advisors in discussion in a Dubai boardroom"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        {/* Dark navy scrim for text readability */}
+        {/* Real-time, hover-reactive dune animation */}
+        <DuneField />
+        {/* Subtle navy scrim, left-weighted, keeps copy legible while the
+            animation stays visible to the right */}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30"
+          className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent"
           aria-hidden="true"
         />
 
-        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28">
+        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28 pointer-events-none">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8 animate-fade-in">
               <span className="h-px w-12 bg-gold" aria-hidden="true" />
               <p className="eyebrow text-gold">Management consulting · Dubai, UAE</p>
             </div>
-            <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-[5rem] lg:text-[5.75rem] lg:leading-[1.02] tracking-tight mb-10 animate-fade-in text-balance">
-              Commercial judgment for the Gulf and its connected markets
+            <h1 className="font-serif font-normal text-[54px] leading-[1.02] sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] lg:leading-[0.98] tracking-tight mb-10 animate-fade-in text-balance">
+              Where capital meets the Gulf
             </h1>
             <p
               className="text-lg lg:text-xl text-foreground/75 leading-relaxed mb-4 max-w-2xl animate-fade-in text-pretty"
@@ -144,7 +146,7 @@ export default function Index() {
               The work is close to the deal, the partner, and the operating reality on the ground. Clients use us
               when getting the commercial call right matters more than producing another view of the market.
             </p>
-            <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="animate-fade-in pointer-events-auto inline-block" style={{ animationDelay: "0.2s" }}>
               <Link to="/contact">
                 <Button size="lg" className="w-full sm:w-auto">
                   Speak with a partner
@@ -161,16 +163,6 @@ export default function Index() {
         <GeometricAccent variant="cross" className="-top-10 -right-20 opacity-[0.18]" size="lg" />
         <GeometricAccent variant="corner" className="bottom-0 left-0 opacity-[0.18] rotate-180" size="md" />
         <div className="container mx-auto px-6 lg:px-8 relative">
-          <div className="mb-14 lg:mb-20 overflow-hidden rounded-lg border border-border">
-            <div className="relative aspect-[21/9]">
-              <img
-                src="/images/office-collaboration.png"
-                alt="Two advisors reviewing financial documents together in a Dubai office"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-transparent to-transparent" aria-hidden="true" />
-            </div>
-          </div>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Where we come in</h2>
@@ -218,7 +210,12 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
             <p className="eyebrow text-gold mb-4">Representative work</p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Selected engagement profiles</h2>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border text-gold" aria-hidden="true">
+                <Layers className="h-5 w-5" />
+              </span>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal">Selected engagement profiles</h2>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
               We do not name clients. The profiles below describe the commercial situation and the result, with
               identifying detail removed.
@@ -251,7 +248,12 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-12">
             <p className="eyebrow text-gold mb-4">What we do</p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Practice areas</h2>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border text-gold" aria-hidden="true">
+                <Compass className="h-5 w-5" />
+              </span>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal">Practice areas</h2>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
               The work is organized around the commercial decisions that move enterprises forward in the region:
               where to compete, where to invest, who to partner with, what to acquire, and how to make the operating
@@ -288,8 +290,13 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <p className="eyebrow text-gold mb-4">Sector depth</p>
-              <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Sectors we work in</h2>
+            <p className="eyebrow text-gold mb-4">Sector depth</p>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-gold/30 text-gold" aria-hidden="true">
+                <Globe2 className="h-5 w-5" />
+              </span>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal">Sectors we work in</h2>
+            </div>
               <p className="text-primary-foreground/70 leading-relaxed mb-6">
                 Sector knowledge in the Gulf is mostly about who the active counterparties are, where regulators
                 are heading, where capital is flowing, and which commercial structures have become standard. We
@@ -335,7 +342,12 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
             <p className="eyebrow text-gold mb-4">Client perspectives</p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">How clients describe the work</h2>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border text-gold" aria-hidden="true">
+                <Quote className="h-5 w-5" />
+              </span>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal">How clients describe the work</h2>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -398,7 +410,12 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
             <p className="eyebrow text-gold mb-4">Why work with us</p>
-            <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">What we bring</h2>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-border text-gold" aria-hidden="true">
+                <Sparkles className="h-5 w-5" />
+              </span>
+              <h2 className="font-serif text-3xl lg:text-4xl font-normal">What we bring</h2>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
@@ -469,6 +486,9 @@ export default function Index() {
         <GeometricAccent variant="cross" className="-bottom-10 -right-10 opacity-[0.06]" size="lg" />
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mx-auto text-center">
+            <span className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-md border border-gold/40 text-gold" aria-hidden="true">
+              <PhoneCall className="h-5 w-5" />
+            </span>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">A direct conversation, before the decision</h2>
             <p className="text-primary-foreground/70 leading-relaxed mb-8">
               If you are weighing a Gulf market move, a regional partnership, a transaction, or an operating
