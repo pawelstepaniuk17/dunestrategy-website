@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-[72px]">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Gulf Associates" className="h-9 lg:h-11 w-auto object-contain" />
+            <img src={logo} alt="Dune Strategy" className="h-9 lg:h-11 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -135,7 +135,7 @@ export default function Index() {
               className="text-lg lg:text-xl text-foreground/75 leading-relaxed mb-4 max-w-2xl animate-fade-in text-pretty"
               style={{ animationDelay: "0.1s" }}
             >
-              Gulf Associates advises corporates, family groups, sovereign-linked entities, and international
+              Dune Strategy advises corporates, family groups, sovereign-linked entities, and international
               investors on the decisions that shape regional position: market entry, expansion across the GCC,
               partnerships and counterparties, transactions, and the operating choices that follow.
             </p>
@@ -404,7 +404,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Why Gulf Associates */}
+      {/* Why Dune Strategy */}
       <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
         <GeometricAccent variant="diagonal" className="-top-10 -right-10 opacity-[0.10]" size="lg" />
         <div className="container mx-auto px-6 lg:px-8 relative">

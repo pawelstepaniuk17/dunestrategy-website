@@ -89,8 +89,8 @@ export default function Contact() {
             <div className="flex flex-col justify-center space-y-6">
               <div className="border-l-2 border-gold/70 pl-6">
                 <h3 className="font-medium mb-1">Email</h3>
-                <a href="mailto:business@gulf-associates.org" className="text-muted-foreground hover:text-foreground transition-colors">
-                  business@gulf-associates.org
+                <a href="mailto:business@dunestrategy.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                  business@dunestrategy.com
                 </a>
               </div>
               <div className="border-l-2 border-gold/70 pl-6">

@@ -85,7 +85,7 @@ export default function About() {
               A Gulf advisory firm for commercial decisions that have to be made in the region
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              Gulf Associates is a Dubai-based advisory firm. We work with corporates, family groups, sovereign-linked
+              Dune Strategy is a Dubai-based advisory firm. We work with corporates, family groups, sovereign-linked
               entities, and international investors on market entry, regional expansion, partnerships, transactions,
               and the operating choices that follow them across the GCC and its connected corridors.
             </p>
@@ -368,7 +368,7 @@ export default function About() {
                 Registrations and affiliations
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Gulf Associates holds the registrations and memberships appropriate for a firm advising on
+                Dune Strategy holds the registrations and memberships appropriate for a firm advising on
                 commercial transactions and senior decisions in the UAE and across the GCC.
               </p>
               <ul className="space-y-4">
