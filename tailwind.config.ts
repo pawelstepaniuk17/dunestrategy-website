@@ -69,7 +69,8 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        serif: ["Georgia", "Cambria", "serif"],
+        serif: ["Newsreader", "Georgia", "Cambria", "serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
       },
       keyframes: {
         "accordion-down": {

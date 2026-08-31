@@ -2,93 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gulf Associates Design System - Black and White Refined Palette */
+/* Gulf Associates Design System - Deep City Navy + Burnished Gold (institutional) */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    /* Base surface: deep city navy */
+    --background: 217 42% 8%;
+    --foreground: 210 30% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    /* Elevated card surface */
+    --card: 216 36% 12%;
+    --card-foreground: 210 30% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 216 38% 10%;
+    --popover-foreground: 210 30% 94%;
 
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
+    /* Deepest obsidian-navy band for feature sections + solid buttons */
+    --primary: 219 48% 6%;
+    --primary-foreground: 210 30% 95%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
+    /* Alternating section surface */
+    --secondary: 217 37% 10%;
+    --secondary-foreground: 210 30% 94%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 216 30% 15%;
+    --muted-foreground: 214 16% 64%;
 
-    --accent: 40 70% 50%;
-    --accent-foreground: 0 0% 8%;
+    /* Brand accent: burnished champagne gold */
+    --accent: 40 54% 58%;
+    --accent-foreground: 219 48% 6%;
 
-    --gold: 40 70% 50%;
-    --gold-foreground: 0 0% 8%;
+    --gold: 40 54% 58%;
+    --gold-foreground: 219 48% 6%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 30% 96%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 8%;
+    /* Hairline keyline border */
+    --border: 213 22% 20%;
+    --input: 213 22% 22%;
+    --ring: 40 54% 58%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 25%;
-    --sidebar-primary: 0 0% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 95%;
-    --sidebar-accent-foreground: 0 0% 10%;
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 0 0% 60%;
+    --sidebar-background: 219 44% 7%;
+    --sidebar-foreground: 210 24% 88%;
+    --sidebar-primary: 40 54% 58%;
+    --sidebar-primary-foreground: 219 48% 6%;
+    --sidebar-accent: 216 34% 13%;
+    --sidebar-accent-foreground: 210 30% 94%;
+    --sidebar-border: 213 22% 18%;
+    --sidebar-ring: 40 54% 58%;
   }
 
+  /* Sections tagged `dark` share the same institutional palette,
+     with a slightly deeper base so feature bands read as elevated depth. */
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    --background: 219 48% 6%;
+    --foreground: 210 30% 95%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 216 36% 11%;
+    --card-foreground: 210 30% 95%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 216 38% 9%;
+    --popover-foreground: 210 30% 95%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 220 50% 5%;
+    --primary-foreground: 210 30% 95%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217 37% 9%;
+    --secondary-foreground: 210 30% 95%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 216 30% 14%;
+    --muted-foreground: 214 16% 66%;
 
-    --accent: 42 80% 62%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 41 58% 62%;
+    --accent-foreground: 219 48% 6%;
 
-    --gold: 42 80% 62%;
-    --gold-foreground: 0 0% 8%;
+    --gold: 41 58% 62%;
+    --gold-foreground: 219 48% 6%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 30% 96%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 0 0% 85%;
+    --border: 213 20% 22%;
+    --input: 213 20% 22%;
+    --ring: 41 58% 62%;
 
-    --sidebar-background: 0 0% 6%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 0 0% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 60%;
+    --sidebar-background: 220 50% 5%;
+    --sidebar-foreground: 210 24% 88%;
+    --sidebar-primary: 41 58% 62%;
+    --sidebar-primary-foreground: 219 48% 6%;
+    --sidebar-accent: 216 34% 12%;
+    --sidebar-accent-foreground: 210 30% 95%;
+    --sidebar-border: 213 20% 18%;
+    --sidebar-ring: 41 58% 62%;
   }
 }
 
@@ -99,17 +107,31 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: "kern" 1, "liga" 1;
+    font-family: "Inter", system-ui, sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1, "cv11" 1;
   }
 
+  /* Editorial serif display for headings */
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
+    font-family: "Newsreader", Georgia, Cambria, serif;
+    font-optical-sizing: auto;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Monospace eyebrow / data tag */
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    @apply text-xs uppercase tracking-[0.22em];
   }
 }
 
@@ -118,7 +140,7 @@
   @apply w-16 h-px bg-gold/40 mx-auto;
 }
 
-/* Brighter gold on dark (primary-bg) sections so it remains legible */
+/* Brighter, more luminous gold on the deepest feature bands */
 .bg-primary {
-  --gold: 42 85% 65%;
+  --gold: 41 62% 64%;
 }

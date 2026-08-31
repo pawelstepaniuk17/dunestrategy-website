@@ -103,24 +103,34 @@ export default function Index() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center bg-background overflow-hidden">
-        <GeometricAccent variant="dots" className="top-0 -right-20 opacity-[0.18]" size="xl" />
-        <GeometricAccent variant="dots" className="bottom-10 left-0 opacity-[0.20]" size="md" />
-        <GeometricAccent variant="diagonal" className="-bottom-10 -right-10 opacity-[0.12]" size="md" />
+      <section className="relative min-h-[88vh] flex items-center overflow-hidden">
+        {/* Full-bleed editorial cover */}
+        <img
+          src="/images/hero-boardroom.png"
+          alt="Senior advisors in discussion in a Dubai boardroom"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        {/* Dark navy scrim for text readability */}
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30"
+          aria-hidden="true"
+        />
 
-        <div className="container mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28">
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-8 animate-fade-in">
               <span className="h-px w-12 bg-gold" aria-hidden="true" />
-              <p className="text-xs tracking-[0.2em] uppercase text-foreground/70">
-                Management consulting · Dubai, UAE
-              </p>
+              <p className="eyebrow text-gold">Management consulting · Dubai, UAE</p>
             </div>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal leading-[1.1] tracking-tight mb-10 animate-fade-in text-balance">
+            <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-[5rem] lg:text-[5.75rem] lg:leading-[1.02] tracking-tight mb-10 animate-fade-in text-balance">
               Commercial judgment for the Gulf and its connected markets
             </h1>
             <p
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-4 max-w-2xl animate-fade-in"
+              className="text-lg lg:text-xl text-foreground/75 leading-relaxed mb-4 max-w-2xl animate-fade-in text-pretty"
               style={{ animationDelay: "0.1s" }}
             >
               Gulf Associates advises corporates, family groups, sovereign-linked entities, and international
@@ -128,7 +138,7 @@ export default function Index() {
               partnerships and counterparties, transactions, and the operating choices that follow.
             </p>
             <p
-              className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl animate-fade-in"
+              className="text-lg lg:text-xl text-foreground/75 leading-relaxed mb-10 max-w-2xl animate-fade-in text-pretty"
               style={{ animationDelay: "0.15s" }}
             >
               The work is close to the deal, the partner, and the operating reality on the ground. Clients use us
@@ -151,6 +161,16 @@ export default function Index() {
         <GeometricAccent variant="cross" className="-top-10 -right-20 opacity-[0.18]" size="lg" />
         <GeometricAccent variant="corner" className="bottom-0 left-0 opacity-[0.18] rotate-180" size="md" />
         <div className="container mx-auto px-6 lg:px-8 relative">
+          <div className="mb-14 lg:mb-20 overflow-hidden rounded-lg border border-border">
+            <div className="relative aspect-[21/9]">
+              <img
+                src="/images/office-collaboration.png"
+                alt="Two advisors reviewing financial documents together in a Dubai office"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-transparent to-transparent" aria-hidden="true" />
+            </div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Where we come in</h2>
@@ -197,7 +217,7 @@ export default function Index() {
         <GeometricAccent variant="lines" className="-top-10 -left-10 opacity-[0.12]" size="lg" />
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
-            <p className="text-sm tracking-widest uppercase text-gold mb-4">Representative work</p>
+            <p className="eyebrow text-gold mb-4">Representative work</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Selected engagement profiles</h2>
             <p className="text-muted-foreground leading-relaxed">
               We do not name clients. The profiles below describe the commercial situation and the result, with
@@ -209,9 +229,9 @@ export default function Index() {
             {engagementHighlights.map((item, index) => (
               <div
                 key={index}
-                className="bg-card border border-foreground/15 shadow-[0_4px_20px_-8px_hsl(var(--foreground)/0.15)] hover:shadow-[0_8px_30px_-8px_hsl(var(--foreground)/0.25)] hover:border-gold/50 transition-all p-8 flex flex-col"
+                className="group bg-card border border-border hover:border-gold/50 transition-colors rounded-lg p-8 flex flex-col"
               >
-                <span className="text-xs tracking-widest uppercase text-gold mb-4">{item.sector}</span>
+                <span className="eyebrow text-gold mb-4">{item.sector}</span>
                 <h3 className="text-lg font-medium mb-4 text-foreground">The situation</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6 text-sm">{item.challenge}</p>
                 <div className="mt-auto border-t border-gold/30 pt-6">
@@ -230,7 +250,7 @@ export default function Index() {
         <GeometricAccent variant="lines" className="top-10 -right-20 opacity-25" size="md" />
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-12">
-            <p className="text-sm tracking-widest uppercase text-gold mb-4">What we do</p>
+            <p className="eyebrow text-gold mb-4">What we do</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Practice areas</h2>
             <p className="text-muted-foreground leading-relaxed">
               The work is organized around the commercial decisions that move enterprises forward in the region:
@@ -268,7 +288,7 @@ export default function Index() {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
-              <p className="text-sm tracking-widest uppercase text-gold mb-4">Sector depth</p>
+              <p className="eyebrow text-gold mb-4">Sector depth</p>
               <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">Sectors we work in</h2>
               <p className="text-primary-foreground/70 leading-relaxed mb-6">
                 Sector knowledge in the Gulf is mostly about who the active counterparties are, where regulators
@@ -314,7 +334,7 @@ export default function Index() {
         <GeometricAccent variant="corner" className="top-0 right-0 opacity-[0.10] -scale-x-100" size="md" />
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
-            <p className="text-sm tracking-widest uppercase text-gold mb-4">Client perspectives</p>
+            <p className="eyebrow text-gold mb-4">Client perspectives</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">How clients describe the work</h2>
           </div>
 
@@ -377,7 +397,7 @@ export default function Index() {
         <GeometricAccent variant="diagonal" className="-top-10 -right-10 opacity-[0.10]" size="lg" />
         <div className="container mx-auto px-6 lg:px-8 relative">
           <div className="max-w-3xl mb-14">
-            <p className="text-sm tracking-widest uppercase text-gold mb-4">Why work with us</p>
+            <p className="eyebrow text-gold mb-4">Why work with us</p>
             <h2 className="font-serif text-3xl lg:text-4xl font-normal mb-6">What we bring</h2>
           </div>
 

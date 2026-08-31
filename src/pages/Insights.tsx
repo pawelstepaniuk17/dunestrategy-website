@@ -120,19 +120,24 @@ export default function Insights() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
-        <GeometricAccent variant="lines" className="top-20 right-10 opacity-[0.18]" size="lg" />
-        <GeometricAccent variant="dots" className="bottom-0 -left-10 opacity-[0.12]" size="md" />
-        
-        <div className="container mx-auto px-6 lg:px-8 relative">
+      <section className="relative overflow-hidden">
+        <img
+          src="/images/insights-banner.png"
+          alt="An analyst annotating a printed market report"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/92 to-background/45" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
+
+        <div className="container relative mx-auto px-6 lg:px-8 pt-28 pb-20 sm:pt-36 md:pt-44 md:pb-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="h-px w-10 bg-gold" aria-hidden="true" />
+              <p className="eyebrow text-gold">Perspectives</p>
+            </div>
+            <h1 className="font-serif font-normal text-[52px] leading-[1.03] sm:text-7xl md:text-8xl lg:text-[6rem] lg:leading-[1.0] tracking-tight mb-8 text-balance">
               Views from the work
             </h1>
-            <div className="flex items-center gap-3 mb-10">
-              <span className="h-px w-10 bg-gold" aria-hidden="true" />
-              <p className="text-xs tracking-[0.18em] text-muted-foreground">Perspectives</p>
-            </div>
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               The perspectives below come from engagement work in the region. The commercial questions we
               encounter repeatedly are the ones we think about most carefully. Holding a position on them is
@@ -282,8 +287,8 @@ export default function Insights() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentQuestions.map((item, index) => (
-              <div key={index} className="bg-secondary p-8">
-                <p className="text-lg font-medium mb-4">{item.question}</p>
+              <div key={index} className="bg-card border border-border rounded-lg p-8 hover:border-gold/50 transition-colors">
+                <p className="font-serif text-lg mb-4">{item.question}</p>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {item.context}
                 </p>
