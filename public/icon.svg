@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" fill="none">
+  <defs>
+    <clipPath id="circleClip1">
+      <circle cx="512" cy="512" r="460" />
+    </clipPath>
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8B7" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#A87B15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle Rim -->
+  <circle cx="512" cy="512" r="460" fill="#0C1322" stroke="url(#goldGrad1)" stroke-width="20" />
+
+  <g clip-path="url(#circleClip1)">
+    <!-- Dune Layer 1 (Back) -->
+    <path d="M -50, 540 Q 280, 460 560, 520 T 1100, 480 L 1100, 1100 L -50, 1100 Z" fill="#141E30" />
+    <path d="M -50, 540 Q 280, 460 560, 520 T 1100, 480" fill="none" stroke="url(#goldGrad1)" stroke-width="8" stroke-opacity="0.45" />
+
+    <!-- Dune Layer 2 (Middle) -->
+    <path d="M -50, 650 Q 320, 570 640, 650 T 1100, 600 L 1100, 1100 L -50, 1100 Z" fill="#1C2B44" />
+    <path d="M -50, 650 Q 320, 570 640, 650 T 1100, 600" fill="none" stroke="url(#goldGrad1)" stroke-width="12" stroke-opacity="0.75" />
+
+    <!-- Dune Layer 3 (Foreground Crest) -->
+    <path d="M -50, 780 Q 260, 700 600, 780 T 1100, 730 L 1100, 1100 L -50, 1100 Z" fill="#263A5C" />
+    <path d="M -50, 780 Q 260, 700 600, 780 T 1100, 730" fill="none" stroke="url(#goldGrad1)" stroke-width="16" />
+  </g>
+</svg>

@@ -20,8 +20,11 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 lg:h-[72px]">
-          <Link to="/" className="flex items-center">
-            <img src={logo} alt="Dune Strategy" className="h-9 lg:h-11 w-auto object-contain" />
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="Dune Strategy" className="h-9 lg:h-10 w-9 lg:w-10 object-contain shrink-0" />
+            <span className="font-serif text-lg lg:text-xl tracking-tight text-foreground font-medium">
+              Dune Strategy
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

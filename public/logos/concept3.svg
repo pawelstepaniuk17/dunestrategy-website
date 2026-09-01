@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" fill="none">
+  <defs>
+    <clipPath id="circleClip3">
+      <circle cx="512" cy="512" r="460" />
+    </clipPath>
+    <linearGradient id="goldGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8B7" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle Rim -->
+  <circle cx="512" cy="512" r="460" fill="#0C1322" stroke="url(#goldGrad3)" stroke-width="20" />
+
+  <g clip-path="url(#circleClip3)">
+    <!-- Minimalist Sovereign Point -->
+    <circle cx="680" cy="320" r="36" fill="url(#goldGrad3)" />
+
+    <!-- Dune 1 -->
+    <path d="M -50, 660 C 200, 460 520, 590 1100, 430 L 1100, 1100 L -50, 1100 Z" fill="#18253D" />
+    <path d="M -50, 660 C 200, 460 520, 590 1100, 430" fill="none" stroke="url(#goldGrad3)" stroke-width="16" />
+
+    <!-- Dune 2 (Foreground) -->
+    <path d="M -50, 820 C 320, 690 640, 840 1100, 640 L 1100, 1100 L -50, 1100 Z" fill="#24375A" />
+    <path d="M -50, 820 C 320, 690 640, 840 1100, 640" fill="none" stroke="url(#goldGrad3)" stroke-width="20" />
+  </g>
+</svg>

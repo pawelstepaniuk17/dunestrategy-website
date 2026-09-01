@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" fill="none">
+  <defs>
+    <clipPath id="circleClip2">
+      <circle cx="512" cy="512" r="460" />
+    </clipPath>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8B7" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle Rim -->
+  <circle cx="512" cy="512" r="460" fill="#0C1322" stroke="url(#goldGrad2)" stroke-width="20" />
+
+  <g clip-path="url(#circleClip2)">
+    <!-- 4 Pure Minimalist Wave Lines -->
+    <path d="M -50, 390 C 220, 340 340, 440 610, 400 S 910, 350 1100, 390" fill="none" stroke="url(#goldGrad2)" stroke-width="14" stroke-linecap="round" />
+    <path d="M -50, 520 C 180, 460 380, 580 650, 520 S 900, 460 1100, 510" fill="none" stroke="url(#goldGrad2)" stroke-width="16" stroke-linecap="round" />
+    <path d="M -50, 650 C 200, 580 390, 720 680, 650 S 940, 590 1100, 640" fill="none" stroke="url(#goldGrad2)" stroke-width="18" stroke-linecap="round" />
+    <path d="M -50, 780 C 190, 720 380, 840 660, 780 S 930, 720 1100, 770" fill="none" stroke="url(#goldGrad2)" stroke-width="20" stroke-linecap="round" />
+  </g>
+</svg>
