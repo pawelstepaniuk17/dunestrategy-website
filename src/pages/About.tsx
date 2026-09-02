@@ -1,57 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { GeometricAccent } from "@/components/layout/GeometricAccent";
 
-const leadershipTeam = [
-  {
-    name: "Ana Teresa Espinosa Bullejos",
-    title: "Chief Executive Officer",
-    image: "/images/team-ana.png",
-    background: "Trained at Management Solutions in Madrid and at IDOM, where she ran operational transformation for infrastructure and industrial clients. Advises financial institutions through cost programs, operating model redesign, and governance. MBA from Universidad Complutense de Madrid, Certified Management Consultant.",
-    focus: "Sets the direction of the firm and stays close to engagements: enterprise strategy, operating discipline, and the governance choices that determine whether decisions hold.",
-  },
-  {
-    name: "Khalid Al-Mansour",
-    title: "Managing Partner",
-    image: "/images/team-khalid.png",
-    background: "Led the Middle East strategy practice of a major global consulting firm, then served as chief strategy officer of a GCC industrial group with assets across the Gulf, North Africa, and South Asia. Has sat on both sides in sovereign-linked transactions and family-ownership transitions. INSEAD MBA, engineering degree from Imperial College London.",
-    focus: "Portfolio decisions and capital allocation for regional groups, sovereign-linked transactions, and cross-border partnerships that shape Gulf institutions.",
-  },
-  {
-    name: "Jordi Hinchado Salgado",
-    title: "Chief Strategy Officer",
-    image: "/images/team-jordi.png",
-    background: "Built and ran new commercial lines for an engineering group across southern Europe and the Mediterranean, restructured operations for a manufacturing platform in Madrid, and began in risk and feasibility at Banco Sabadell in Barcelona. MBA in strategic management from Esade, economics degree from Universitat de Barcelona.",
-    focus: "Long-horizon strategy for boards and chief executives, and the discipline of taking new commercial ventures from plan to operating reality.",
-  },
-  {
-    name: "Sarah Bennett",
-    title: "Partner, Operations and Performance",
-    image: "/images/team-sarah.png",
-    background: "Worked between London and Dubai at one of the larger international firms, advising banks and industrial groups through cost reset programs, integrations, and structural work following regulatory change. Known for getting on the operating floor rather than working from the steering committee deck. Deep experience in regulated sectors.",
-    focus: "Operating model design, post-merger integration, and performance recovery in regulated sectors where the margin between clean execution and a costly one is narrow.",
-  },
-  {
-    name: "Doreen Becker",
-    title: "Head of Talent and Culture",
-    image: "/images/team-doreen.png",
-    background: "Came up through the people functions of Hays in London, Henkel in Düsseldorf, and the Bosch consulting practice in Stuttgart, with earlier experience at BMW in Munich. Designs talent strategy and organizational structures for the firm and its clients through restructuring and senior succession. M.A. from Humboldt-Universität zu Berlin.",
-    focus: "Talent strategy, organizational design, and leadership effectiveness for the firm and the institutions it advises through restructuring and succession.",
-  },
-  {
-    name: "Omar Nasser",
-    title: "Partner, Organization and Governance",
-    image: "/images/team-omar.png",
-    background: "Former group chief human resources officer of a regional banking group, with prior consulting work spanning organizational redesign, governance reform, and the generational handover of family-owned institutions across the GCC. Has guided founding families through the arithmetic of succession, board renewal, and the structures that outlast the founder.",
-    focus: "Family-business governance, board composition, and senior succession in the institutions that anchor regional economies.",
-  },
-  {
-    name: "Elena Volkova",
-    title: "Partner, Growth and Markets",
-    image: "/images/team-elena.png",
-    background: "Built commercial practices from central and eastern Europe into the Gulf and South Asia. Designed market entry and distribution structures for international entrants, and helped regional champions rethink pricing and channel economics as their markets matured. Focuses on the commercial sequencing that compounds position.",
-    focus: "Market entry for international groups landing in the Gulf, partnership and distribution structures, and the commercial sequencing that determines whether a market position compounds.",
-  },
-];
 
 const affiliations = [
   "Member, Dubai Chamber of Commerce and Industry",
@@ -319,43 +268,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Partners */}
-      <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
-        <GeometricAccent variant="dots" className="-bottom-20 -right-10 opacity-[0.10]" size="lg" />
-        <div className="container mx-auto px-6 lg:px-8 relative">
-          <div className="max-w-3xl mb-14">
-            <p className="eyebrow text-gold mb-4">Leadership</p>
-            <h2 className="text-3xl lg:text-4xl font-semibold mb-6">
-              Partners
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The partners combine senior consulting experience with operating roles inside Gulf institutions.
-              Each has chosen to build a regional practice rather than continue inside a global firm because the
-              commercial decisions in this region reward continuous presence.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-x-10 gap-y-14">
-            {leadershipTeam.map((person, index) => (
-              <div key={index} className="grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-6">
-                <div className="relative aspect-[3/4] w-36 sm:w-auto overflow-hidden rounded-md border border-border">
-                  <img
-                    src={person.image}
-                    alt={`Portrait of ${person.name}`}
-                    className="absolute inset-0 h-full w-full object-cover object-top grayscale-[15%]"
-                  />
-                </div>
-                <div className="border-t-2 border-gold/60 pt-4">
-                  <h3 className="font-serif text-xl mb-1">{person.name}</h3>
-                  <p className="eyebrow text-gold mb-4">{person.title}</p>
-                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{person.background}</p>
-                  <p className="text-sm"><span className="font-medium text-foreground">Focus areas:</span> <span className="text-muted-foreground">{person.focus}</span></p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Registrations & conduct */}
       <section className="py-20 lg:py-28 bg-secondary relative overflow-hidden">
