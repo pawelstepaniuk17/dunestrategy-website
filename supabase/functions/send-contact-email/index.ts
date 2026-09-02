@@ -37,7 +37,7 @@ Deno.serve(async (req) => {
     }
     const d = parsed.data;
 
-    const recipient = "business@dunestrategy.com";
+    const recipient = "contact@ridge-partners.ch";
 
     const adminHtml = `
       <h2>New contact inquiry</h2>
@@ -74,7 +74,7 @@ Deno.serve(async (req) => {
 
     // Admin notification only — sending to arbitrary recipients requires a verified domain
     await send({
-      from: "Dune Strategy <onboarding@resend.dev>",
+      from: "Dune Strategy <contact@ridge-partners.ch>",
       to: [recipient],
       reply_to: d.email,
       subject: `New inquiry from ${d.name}`,
